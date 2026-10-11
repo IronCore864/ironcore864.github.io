@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Tiexin Guo</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/logo-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    (function () {
+      var r = document.documentElement;
+      r.className += " js";
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) {
+          t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        r.setAttribute("data-theme", t);
+      } catch (e) {
+        r.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="/">
+        <img src="/assets/img/favicon-32.png" alt="" width="32" height="32">
+        <span>Tiexin Guo</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">About</a></li>
+        <li><a href="/cv/">Résumé</a></li>
+        <li><a href="/portfolio/">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="hero">
+        <span class="eyebrow">Error 404</span>
+        <h1>This page doesn't exist</h1>
+        <p class="tagline">The link may be broken, or it pointed at an old blog post — the blog has been
+          retired.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="/">Go to the homepage</a>
+          <a class="btn" href="/cv/">Résumé</a>
+          <a class="btn" href="/portfolio/">Portfolio</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p style="margin:0">© Tiexin Guo · Built with plain HTML and CSS</p>
+    </div>
+  </footer>
+</body>
+
+</html>

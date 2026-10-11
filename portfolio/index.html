@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Tiexin Guo</title>
+  <meta name="description"
+    content="Selected DevOps, cloud, and Kubernetes projects by Tiexin Guo for Tesco Bank, Credit Suisse, Allianz, Daimler, Mercedes-AMG, Lanxess, Kuehne+Nagel, and others.">
+  <meta name="author" content="Tiexin Guo">
+  <link rel="canonical" href="https://www.guotiexin.com/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio — Tiexin Guo">
+  <meta property="og:description"
+    content="Selected DevOps, cloud, and Kubernetes projects, with the tech stack behind each one.">
+  <meta property="og:url" content="https://www.guotiexin.com/portfolio/">
+  <meta property="og:image" content="https://www.guotiexin.com/assets/img/logo.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/logo-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    (function () {
+      var r = document.documentElement;
+      r.className += " js";
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) {
+          t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        r.setAttribute("data-theme", t);
+      } catch (e) {
+        r.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="/">
+        <img src="/assets/img/favicon-32.png" alt="" width="32" height="32">
+        <span>Tiexin Guo</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="/">About</a></li>
+        <li><a href="/cv/">Résumé</a></li>
+        <li><a href="/portfolio/" aria-current="page">Portfolio</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2" />
+          <path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap wrap--wide">
+
+      <section class="hero">
+        <span class="eyebrow">Portfolio</span>
+        <h1>Selected Projects</h1>
+        <p class="tagline">Cloud migrations, Kubernetes platforms, and DevOps transformations for banks,
+          insurers, car makers, and logistics companies — with the stack behind each one.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="/cv/">
+            Read my résumé
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h13M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a class="btn" href="/">About me</a>
+        </div>
+      </section>
+
+      <section aria-label="Projects">
+        <ul class="project-grid">
+
+          <li>
+            <article class="project">
+              <h3><a href="https://www.tescobank.com/" rel="noopener">Tesco Bank</a> — DevOps Consulting</h3>
+              <p class="entry-meta">2021 · Scotland / UK</p>
+              <p>A six-day workshop covering every stage of the bank's software development lifecycle in depth,
+                ending in a detailed report of concrete improvements.</p>
+              <ul class="tags">
+                <li>SDLC Assessment</li>
+                <li>DevOps Consulting</li>
+                <li>Workshop Facilitation</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3><a href="https://www.credit-suisse.com/" rel="noopener">Credit Suisse</a> — Cloud Migration
+                &amp; High Availability</h3>
+              <p class="entry-meta">2021 · Switzerland</p>
+              <p>One of the world's best-known private banks, active in over 50 countries.</p>
+              <ul>
+                <li>Hundreds of bare-metal servers migrated to AWS</li>
+                <li>Multi-AZ highly available network architecture, designed and implemented</li>
+                <li>Automated failover — switch availability zones at the push of a button</li>
+                <li>Automated cross-AZ backup of
+                  <a href="https://aws.amazon.com/emr/features/hbase/" rel="noopener">HBase on EMR</a> data
+                </li>
+              </ul>
+              <ul class="tags">
+                <li>AWS</li>
+                <li>EC2 Bare Metal</li>
+                <li>Nitro</li>
+                <li>Placement Groups</li>
+                <li>ELB</li>
+                <li>HBase</li>
+                <li>S3</li>
+                <li>Ansible</li>
+                <li>Jenkins</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3><a href="https://www.allianz.com/en.html" rel="noopener">Allianz</a> — Container Runtime
+                Platform 2.0</h3>
+              <p class="entry-meta">2019 – 2020 · Germany</p>
+              <p>CRP 2.0 is Allianz's global Kubernetes-as-a-Service platform.</p>
+              <ul>
+                <li>100% infrastructure as code with
+                  <a href="https://www.terraform.io/" rel="noopener">Terraform</a>, Python 3, and Go, on both
+                  AWS and Azure
+                </li>
+                <li>Fully automated Jenkins pipelines</li>
+                <li>Highly available secrets management with
+                  <a href="https://www.vaultproject.io/" rel="noopener">Vault</a>
+                </li>
+                <li>Open-source templating tool in Go for CI pipelines</li>
+                <li>Open-source SAML authentication proxy in Go for internal services</li>
+                <li>Participated in every architectural decision and contributed 90% of the code</li>
+              </ul>
+              <ul class="tags">
+                <li>AWS</li>
+                <li>Azure</li>
+                <li>Terraform</li>
+                <li>Kubernetes</li>
+                <li>Vault</li>
+                <li>Ansible</li>
+                <li>Python 3</li>
+                <li>Go</li>
+                <li>Jenkins</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3><a href="https://allianzdirect.de/" rel="noopener">Allianz Direct</a></h3>
+              <p class="entry-meta">2019 – 2020 · Germany</p>
+              <p>The online car insurance platform of Allianz, the world's largest insurer.</p>
+              <ul>
+                <li>AWS and on-premises hybrid cloud across four countries</li>
+                <li>Hub-and-spoke network topology, five environments, 100% infrastructure as code with
+                  Terraform</li>
+                <li>60+ microservices with fully automated CI and 100+ deployments managed by Jenkins, Argo CD,
+                  and Helm</li>
+                <li>Container runtime security with
+                  <a href="https://www.paloaltonetworks.com/prisma/cloud" rel="noopener">Prisma Cloud</a>
+                </li>
+                <li>High-performance logging with Loki and Grafana</li>
+                <li>Open-source Vault-to-Kubernetes secrets synchronization tool</li>
+              </ul>
+              <ul class="tags">
+                <li>AWS</li>
+                <li>Azure</li>
+                <li>On-Premises</li>
+                <li>Terraform</li>
+                <li>Vault</li>
+                <li>OpenShift</li>
+                <li>Kubernetes</li>
+                <li>Go</li>
+                <li>Argo CD</li>
+                <li>Helm</li>
+                <li>Prometheus</li>
+                <li>Grafana</li>
+                <li>Loki</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3><a href="https://seirobotics.net/" rel="noopener">SEI Robotics</a> — Cloud/Kubernetes
+                Migration</h3>
+              <p class="entry-meta">2019 · China</p>
+              <p>A smart-home hardware company and global leader in Android TV and IoT devices.</p>
+              <ul>
+                <li>Multi-cloud (AWS + Alibaba Cloud) architecture and high-availability implementation, 100%
+                  infrastructure as code</li>
+                <li>Migration of MQTT-based microservices to Kubernetes</li>
+                <li>Internal training on DevOps, Kubernetes, cloud, and IaC</li>
+              </ul>
+              <ul class="tags">
+                <li>AWS</li>
+                <li>Alibaba Cloud</li>
+                <li>Kubernetes</li>
+                <li>MQTT</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3>Daimler — <a href="https://www.mercedes-benz.com/en/innovation/eq-ready/" rel="noopener">EQ
+                  Ready</a></h3>
+              <p class="entry-meta">2018 – 2019 · Germany</p>
+              <p>A mobile app backed by a cloud AI/ML recommendation engine that suggests the most suitable car
+                for each user based on behavior, driving style, and habits.</p>
+              <ul>
+                <li>Cloud-native on Microsoft Azure, 100% infrastructure as code with Terraform, highly
+                  available</li>
+                <li>Built from the ground up following the
+                  <a href="https://12factor.net/" rel="noopener">twelve-factor app</a> methodology
+                </li>
+                <li>Microservices in Go and Python 3, all running on Kubernetes</li>
+                <li>CI/CD pipelines supporting multiple builds and deploys per day</li>
+              </ul>
+              <ul class="tags">
+                <li>Azure</li>
+                <li>Terraform</li>
+                <li>Kubernetes</li>
+                <li>Go</li>
+                <li>Python</li>
+                <li>Jenkins</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3><a href="https://www.daimler.com/" rel="noopener">Daimler</a> — Car and Customer Platform</h3>
+              <p class="entry-meta">2018 – 2019 · Germany</p>
+              <p>CCP is Daimler's next-generation, fully automated datacenter and public cloud platform.</p>
+              <ul>
+                <li>Bare metal as a service with <a href="https://maas.io/" rel="noopener">MaaS</a></li>
+                <li>Software-defined networking on white-box switches with
+                  <a href="https://www.nvidia.com/en-sg/networking/ethernet-switching/cumulus-linux/"
+                    rel="noopener">Cumulus Linux</a>
+                </li>
+                <li>Fully automated configuration of every server and switch with Ansible</li>
+                <li>Multi-tenant Kubernetes on bare metal, 100% automated</li>
+                <li><a href="https://ceph.io/" rel="noopener">Ceph</a> clusters on Kubernetes as the storage
+                  layer</li>
+                <li>Centralized logging and monitoring with ELK and Prometheus/Grafana</li>
+              </ul>
+              <ul class="tags">
+                <li>Bare Metal</li>
+                <li>MaaS</li>
+                <li>Kubernetes</li>
+                <li>Ansible</li>
+                <li>Cumulus</li>
+                <li>Ceph</li>
+                <li>ELK</li>
+                <li>Prometheus</li>
+                <li>Grafana</li>
+                <li>GoCD</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3><a href="https://www.mercedes-amg.com/" rel="noopener">Mercedes-AMG</a> — Machine Learning on
+                Bare Metal</h3>
+              <p class="entry-meta">2018 – 2019 · Germany</p>
+              <p>Two AI/ML modules — one for emissions, one for debugging and tuning — running on Kubernetes on
+                bare metal.</p>
+              <ul>
+                <li>Bare metal as a service</li>
+                <li>Automated Kubernetes cluster configuration on bare metal with Ansible</li>
+                <li>Machine-learning build and deploy pipelines in Kubernetes</li>
+              </ul>
+              <ul class="tags">
+                <li>Bare Metal</li>
+                <li>MaaS</li>
+                <li>Kubernetes</li>
+                <li>Ansible</li>
+                <li>Jenkins</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3><a href="https://lanxess.com/" rel="noopener">Lanxess</a> —
+                <a href="https://chemondis.com/" rel="noopener">CheMondis</a>
+              </h3>
+              <p class="entry-meta">2018 – 2019 · Germany</p>
+              <p>CheMondis is the online chemicals marketplace of Lanxess, a specialty chemicals company spun
+                out of <a href="https://www.bayer.com/en/" rel="noopener">Bayer AG</a>.</p>
+              <ul>
+                <li>Cloud-native on Microsoft Azure, 100% infrastructure as code with Terraform, highly
+                  available</li>
+                <li>Built from the ground up following the twelve-factor app methodology</li>
+                <li>Python 3 and Django, everything built from scratch</li>
+              </ul>
+              <ul class="tags">
+                <li>Azure</li>
+                <li>Terraform</li>
+                <li>Python 3</li>
+                <li>Django</li>
+                <li>PostgreSQL</li>
+                <li>Jenkins</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3>MyJar</h3>
+              <p class="entry-meta">2017 – 2018 · Estonia</p>
+              <p>An Estonian B2C consumer lending startup, later acquired by a British company.</p>
+              <ul>
+                <li>Monolith-to-microservices refactor</li>
+                <li>On-premises to AWS migration, 100% infrastructure as code</li>
+                <li>Configuration management with Ansible, with minimum redundancy and maximum reuse</li>
+              </ul>
+              <ul class="tags">
+                <li>On-Premises</li>
+                <li>AWS</li>
+                <li>Terraform</li>
+                <li>Ansible</li>
+                <li>Packer</li>
+                <li>Jenkins</li>
+              </ul>
+            </article>
+          </li>
+
+          <li>
+            <article class="project">
+              <h3><a href="https://home.kuehne-nagel.com/" rel="noopener">Kuehne+Nagel</a> — EDI</h3>
+              <p class="entry-meta">2016 – 2017 · Estonia</p>
+              <p>An Electronic Data Interchange project connecting dozens of critical services for the largest
+                global freight forwarding and supply chain management corporation.</p>
+              <ul>
+                <li>Automated configuration management with Ansible for bare-metal servers and VMs</li>
+                <li>Test-driven configuration code with Docker,
+                  <a href="https://kitchen.ci/" rel="noopener">Test Kitchen</a>, and
+                  <a href="https://serverspec.org/" rel="noopener">serverspec</a>
+                </li>
+                <li>Built a monitoring system with React and Redux</li>
+                <li>Set up CI/CD from scratch with Jenkins and coached three teams in different countries on
+                  agile practice</li>
+              </ul>
+              <ul class="tags">
+                <li>On-Premises</li>
+                <li>Ansible</li>
+                <li>Test Kitchen</li>
+                <li>serverspec</li>
+                <li>Jenkins</li>
+                <li>Python 3</li>
+                <li>Korn Shell</li>
+                <li>React</li>
+                <li>Redux</li>
+              </ul>
+            </article>
+          </li>
+
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p style="margin:0">© Tiexin Guo · Built with plain HTML and CSS</p>
+      <ul class="socials">
+        <li>
+          <a href="https://github.com/ironcore864" rel="me noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.55v-1.94c-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.18-1.49 3.14-1.18 3.14-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.42.36.79 1.06.79 2.14v3.17c0 .3.21.66.8.55A11.5 11.5 0 0 0 23.5 12A11.5 11.5 0 0 0 12 .5z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/guotiexin/" rel="me noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9.75h4v11.25H3zM9.5 9.75h3.83v1.54h.05a4.2 4.2 0 0 1 3.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.91 1.3-1.91 2.64V21h-4z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@IronCore864" rel="me noopener" aria-label="Medium">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zM20.96 12c0 3.54-1.51 6.4-3.39 6.4-1.87 0-3.39-2.86-3.39-6.4s1.52-6.4 3.4-6.4 3.38 2.86 3.38 6.4zM24 12c0 3.17-.53 5.74-1.19 5.74-.66 0-1.19-2.57-1.19-5.74s.53-5.74 1.19-5.74C23.47 6.26 24 8.83 24 12z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://flickr.com/people/ironcore864/" rel="me noopener" aria-label="Flickr">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <circle cx="6.5" cy="12" r="4.5" />
+              <circle cx="17.5" cy="12" r="4.5" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="/assets/js/theme.js" defer></script>
+</body>
+
+</html>
