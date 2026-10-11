@@ -42,7 +42,6 @@
   --w-wide: 68rem;
   --radius: 10px;
   --radius-sm: 6px;
-  --space: 1rem;
   --header-h: 4rem;
 }
 
@@ -927,16 +926,34 @@ section + section {
     margin-top: 1.5rem;
   }
 
+  /* Keep individual entries intact, but let long sections flow across
+     pages — avoiding breaks inside a whole section wastes most of a page. */
   .timeline > li,
   .project,
-  .card,
-  section {
+  .card {
     break-inside: avoid;
     page-break-inside: avoid;
   }
 
+  h2,
+  h3 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
   .timeline > li {
     margin-bottom: 0.9rem;
+  }
+
+  /* The rail and dots sit outside the content box, which the page margin
+     clips — drop them and let the entries read as a plain list. */
+  .timeline {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .timeline > li::before {
+    display: none;
   }
 
   a {
